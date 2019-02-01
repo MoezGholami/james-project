@@ -1,0 +1,15 @@
+language: java
+services:
+  - docker
+os:
+  - linux
+jdk:
+  - openjdk8
+script:
+    - ./.ci_files/travis_build.sh
+
+cache:
+  directories:
+  - "$HOME/.m2"
+install:
+  - echo 'Override Travis-ci install step'

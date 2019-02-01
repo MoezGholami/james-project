@@ -33,6 +33,7 @@ import java.util.stream.Stream;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import com.github.steveash.guavate.Guavate;
 import com.google.common.collect.ImmutableList;
@@ -169,6 +170,7 @@ public class CompletableFutureUtilTest {
             .containsExactly(value1, value2, value3, value4, value5, value6, value7, value8, value9, value10);
     }
 
+    @Ignore
     @Test
     public void allOfShouldWorkOnVeryLargeStream() {
         CompletableFutureUtil.allOf(
